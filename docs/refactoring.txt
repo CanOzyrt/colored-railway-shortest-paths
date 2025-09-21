@@ -1,0 +1,15 @@
+Possible refactoring oppotunities
+
+1. Make City or Link abstract
+2. Dependencies on concrete classes in everywhere!! (DIP violations)
+   Each one individually counts as a refactoring
+3. City/Link may violate OCP. Difficult to add new types
+4.  Class hierarchy may need to be reorganized (LSP)
+5. subclasses are all public but never used directly
+Could be made private. Each one counts individually as a refactoring.
+6. After adding error checking and handling 2 players the code is likely to
+violate OCP. Refactoring can make this easier to allow one or more
+types of links in the future
+7. Factory pattern (bonus question) solves several of these. Remember
+that a new UML diagram is needed for the factory pattern.
+8. Probably many others...
